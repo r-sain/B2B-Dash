@@ -1,0 +1,97 @@
+.home {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+.sidebarCont {
+  flex: 1;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 10px 10px rgb(232, 232, 232);
+  -moz-box-shadow: 1px 1px 10px 10px rgb(232, 232, 232);
+  box-shadow: 1px 1px 10px 10px rgb(232, 232, 232);
+  z-index: 1000;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+}
+.homeContainer {
+  width: 100%;
+}
+.homeBodyEmpty {
+  height: 1000px;
+  margin-left: 100px;
+  margin-top: 60px;
+
+  width: calc(100% - 240px);
+  background-image: url("../images/HeroImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: 240px;
+  overflow-x: hidden;
+}
+
+.BodyFull {
+  margin-left: 260px;
+  margin-top: 60px;
+  padding-top: 20px;
+  width: calc(100%-240px);
+  height: 100%;
+  display: flex;
+  height: 100vw;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 75px;
+  padding-bottom: 15px;
+}
+.data {
+  flex: 50%;
+}
+.topBarCont {
+  z-index: 900;
+  margin-left: 240px;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 240px);
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 7px 6px 0px rgba(214, 214, 214, 1);
+  -moz-box-shadow: 0px 7px 6px 0px rgba(214, 214, 214, 1);
+  box-shadow: 0px 7px 6px 0px rgba(214, 214, 214, 1);
+}
+.topbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.topicons {
+  color: grey;
+}
+.topsearch {
+  color: grey;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.topsearch > input {
+  border: none;
+  width: 500px;
+  height: 60px;
+}
+.topsearch > input:focus {
+  outline: none;
+}
+.topicons {
+  display: flex;
+  gap: 10px;
+}
